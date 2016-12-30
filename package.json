@@ -1,0 +1,10 @@
+{
+  "name": "bukk",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "christianhg/bukk",
+  "author": {
+    "name": "Christian Grøngaard",
+    "email": "christianhg@gmail.com"
+  }
+}
