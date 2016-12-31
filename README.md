@@ -28,6 +28,12 @@ Or `npm`:
 npm install --save bukk
 ```
 
+Import module:
+
+```js
+const B = require('bukk')
+```
+
 ## Development
 
 Install dependencies:
