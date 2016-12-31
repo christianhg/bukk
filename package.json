@@ -6,5 +6,15 @@
   "author": {
     "name": "Christian Grøngaard",
     "email": "christianhg@gmail.com"
+  },
+  "scripts": {
+    "test": "ava",
+    "watch:test": "ava --watch"
+  },
+  "ava": {
+    "files": "tests/*.js"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0"
   }
 }
