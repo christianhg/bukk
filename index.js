@@ -1,4 +1,5 @@
 module.exports = {
+  add: require('./src/add'),
   and: require('./src/and'),
   compose: require('./src/compose'),
   curry: require('./src/curry'),
