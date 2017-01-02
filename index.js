@@ -12,4 +12,5 @@ module.exports = {
   pipe: require('./src/pipe'),
   slice: require('./src/slice'),
   tail: require('./src/tail'),
+  type: require('./src/type'),
 }

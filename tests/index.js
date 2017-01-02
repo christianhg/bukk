@@ -53,3 +53,7 @@ test('should export slice', t => {
 test('should export tail', t => {
   t.is(typeof B.tail, 'function')
 })
+
+test('should export type', t => {
+  t.is(typeof B.type, 'function')
+})
