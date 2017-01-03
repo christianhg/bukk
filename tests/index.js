@@ -38,6 +38,10 @@ test('should export lte', t => {
   t.is(typeof B.lte, 'function')
 })
 
+test('should export map', t => {
+  t.is(typeof B.map, 'function')
+})
+
 test('should export or', t => {
   t.is(typeof B.or, 'function')
 })
