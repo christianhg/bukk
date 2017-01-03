@@ -8,6 +8,7 @@ module.exports = {
   head: require('./src/head'),
   lt: require('./src/lt'),
   lte: require('./src/lte'),
+  map: require('./src/map'),
   or: require('./src/or'),
   pipe: require('./src/pipe'),
   slice: require('./src/slice'),
