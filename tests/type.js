@@ -30,6 +30,10 @@ test('should recognize String', t => {
   t.is(type('foo'), 'String')
 })
 
+test('should recognize Symbol', t => {
+  t.is(type(Symbol(1)), 'Symbol')
+})
+
 test('should recognize Undefined', t => {
   t.is(type(undefined), 'Undefined')
 })
