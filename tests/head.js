@@ -3,7 +3,7 @@ import test from 'ava'
 import head from '../src/head'
 
 test('should return head of an Array', t => {
-  t.is(head([1,2,3]), 1)
+  t.is(head([1, 2, 3]), 1)
 })
 
 test('should return head of a String', t => {

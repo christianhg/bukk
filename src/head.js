@@ -1,2 +1,4 @@
-module.exports = head = xs =>
+const head = xs =>
   xs[0]
+
+module.exports = head

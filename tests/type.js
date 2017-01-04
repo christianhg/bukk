@@ -23,7 +23,7 @@ test('should recognize Object', t => {
 })
 
 test('should recognize Set', t => {
-  t.is(type(new Set([1,2,3])), 'Set')
+  t.is(type(new Set([1, 2, 3])), 'Set')
 })
 
 test('should recognize String', t => {

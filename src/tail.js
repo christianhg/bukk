@@ -1,4 +1,6 @@
 const slice = require('./slice')
 
-module.exports = tail = xs =>
+const tail = xs =>
   slice(1, xs.length, xs)
+
+module.exports = tail

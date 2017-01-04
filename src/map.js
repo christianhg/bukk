@@ -15,7 +15,7 @@ const map = (f, a) =>
     'Set': () => new Set([...a].map(f)),
     'String': () => f(a),
     'Symbol': () => a,
-    'Undefined': () => undefined,
+    'Undefined': () => undefined
   }[type(a)]())
 
 module.exports = curry(map)

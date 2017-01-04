@@ -12,7 +12,7 @@ test('should be curried', t => {
 })
 
 test('should map an Array', t => {
-  t.deepEqual(map(inc, [1,2,3]), [2,3,4])
+  t.deepEqual(map(inc, [1, 2, 3]), [2, 3, 4])
 })
 
 test('should map an Object', t => {
@@ -36,7 +36,7 @@ test('should not map Null', t => {
 })
 
 test('should not map a Symbol', t => {
-  const one = Symbol(1);
+  const one = Symbol(1)
 
   t.deepEqual(map(inc, one), one)
 })
@@ -53,5 +53,5 @@ test('should map a Map', t => {
 })
 
 test('should map a Set', t => {
-  t.deepEqual(map(inc, new Set([1,2,3])), new Set([2,3,4]))
+  t.deepEqual(map(inc, new Set([1, 2, 3])), new Set([2, 3, 4]))
 })

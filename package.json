@@ -8,13 +8,15 @@
     "email": "christianhg@gmail.com"
   },
   "scripts": {
-    "test": "ava",
-    "watch:test": "ava --watch"
+    "lint": "standard",
+    "test": "standard && ava",
+    "watch:test": "standard && ava --watch"
   },
   "ava": {
     "files": "tests/*.js"
   },
   "devDependencies": {
-    "ava": "^0.17.0"
+    "ava": "^0.17.0",
+    "standard": "^8.6.0"
   }
 }
