@@ -4,43 +4,43 @@ import B from '../'
 import type from '../src/type'
 
 test('should export add', t => {
-  t.is(typeof B.add, 'function')
+  t.is(type(B.add), 'Function')
 })
 
 test('should export and', t => {
-  t.is(typeof B.and, 'function')
+  t.is(type(B.and), 'Function')
 })
 
 test('should export compose', t => {
-  t.is(typeof B.compose, 'function')
+  t.is(type(B.compose), 'Function')
 })
 
 test('should export curry', t => {
-  t.is(typeof B.curry, 'function')
+  t.is(type(B.curry), 'Function')
 })
 
 test('should export gt', t => {
-  t.is(typeof B.gt, 'function')
+  t.is(type(B.gt), 'Function')
 })
 
 test('should export gte', t => {
-  t.is(typeof B.gte, 'function')
+  t.is(type(B.gte), 'Function')
 })
 
 test('should export head', t => {
-  t.is(typeof B.head, 'function')
+  t.is(type(B.head), 'Function')
 })
 
 test('should export lt', t => {
-  t.is(typeof B.lt, 'function')
+  t.is(type(B.lt), 'Function')
 })
 
 test('should export lte', t => {
-  t.is(typeof B.lte, 'function')
+  t.is(type(B.lte), 'Function')
 })
 
 test('should export map', t => {
-  t.is(typeof B.map, 'function')
+  t.is(type(B.map), 'Function')
 })
 
 test('should export B.multiply', t => {
@@ -48,21 +48,21 @@ test('should export B.multiply', t => {
 })
 
 test('should export or', t => {
-  t.is(typeof B.or, 'function')
+  t.is(type(B.or), 'Function')
 })
 
 test('should export pipe', t => {
-  t.is(typeof B.pipe, 'function')
+  t.is(type(B.pipe), 'Function')
 })
 
 test('should export slice', t => {
-  t.is(typeof B.slice, 'function')
+  t.is(type(B.slice), 'Function')
 })
 
 test('should export tail', t => {
-  t.is(typeof B.tail, 'function')
+  t.is(type(B.tail), 'Function')
 })
 
 test('should export type', t => {
-  t.is(typeof B.type, 'function')
+  t.is(type(B.type), 'Function')
 })

@@ -1,6 +1,7 @@
 import test from 'ava'
 
 import curry from '../src/curry'
+import type from '../src/type'
 
 const add = (a, b) => a + b
 const addCurried = curry(add)
@@ -14,7 +15,7 @@ test('should accept arguments one by one', t => {
 })
 
 test('should return a function when insufficient arguments are applied', t => {
-  t.is(typeof addCurried(1), 'function')
+  t.is(type(addCurried(1)), 'Function')
 })
 
 test('should ignore extra arguments', t => {

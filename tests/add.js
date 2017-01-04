@@ -1,13 +1,14 @@
 import test from 'ava'
 
 import add from '../src/add'
+import type from '../src/type'
 
 test('should be defined', t => {
-  t.is(typeof add, 'function')
+  t.is(type(add), 'Function')
 })
 
 test('should be curried', t => {
-  t.is(typeof add(1), 'function')
+  t.is(type(add(1)), 'Function')
 })
 
 test('should add two numbers', t => {
