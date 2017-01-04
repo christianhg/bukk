@@ -1,6 +1,7 @@
 import test from 'ava'
 
 import B from '../'
+import type from '../src/type'
 
 test('should export add', t => {
   t.is(typeof B.add, 'function')
@@ -40,6 +41,10 @@ test('should export lte', t => {
 
 test('should export map', t => {
   t.is(typeof B.map, 'function')
+})
+
+test('should export B.multiply', t => {
+  t.is(type(B.multiply), 'Function')
 })
 
 test('should export or', t => {

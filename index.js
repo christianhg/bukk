@@ -9,6 +9,7 @@ module.exports = {
   lt: require('./src/lt'),
   lte: require('./src/lte'),
   map: require('./src/map'),
+  multiply: require('./src/multiply'),
   or: require('./src/or'),
   pipe: require('./src/pipe'),
   slice: require('./src/slice'),
