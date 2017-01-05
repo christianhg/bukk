@@ -6,11 +6,11 @@
 
 Just kidding. Inspired by [ramda](https://github.com/ramda/ramda), this an automatically curried, data-last, functional JavaScript library.
 
-## How is this better than ramda?
+### How is this better than ramda?
 
 It's not. It exists mainly for the purpose of letting its author get more experienced with functional programming.
 
-## "Bukk"?
+### "Bukk"?
 
 "Bukk" means "ram" in Norwegian.
 
@@ -33,6 +33,17 @@ Import module:
 ```js
 const B = require('bukk')
 ```
+
+### Example
+
+```js
+const inc = B.add(1)
+const incList = B.map(inc)
+
+incList([1, 2, 3])
+// ==> [2, 3, 4]
+```
+
 
 ## Development
 
