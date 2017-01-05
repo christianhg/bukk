@@ -63,6 +63,10 @@ test('should export slice', t => {
   t.is(type(B.slice), 'Function')
 })
 
+test('should export B.subtract', t => {
+  t.is(type(B.subtract), 'Function')
+})
+
 test('should export tail', t => {
   t.is(type(B.tail), 'Function')
 })

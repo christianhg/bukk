@@ -14,6 +14,7 @@ module.exports = {
   or: require('./src/or'),
   pipe: require('./src/pipe'),
   slice: require('./src/slice'),
+  subtract: require('./src/subtract'),
   tail: require('./src/tail'),
   type: require('./src/type')
 }
