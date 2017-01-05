@@ -13,6 +13,7 @@ module.exports = {
   multiply: require('./src/multiply'),
   or: require('./src/or'),
   pipe: require('./src/pipe'),
+  range: require('./src/range'),
   slice: require('./src/slice'),
   subtract: require('./src/subtract'),
   tail: require('./src/tail'),
