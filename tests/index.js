@@ -3,19 +3,19 @@ import test from 'ava'
 import B from '../'
 import type from '../src/type'
 
-test('should export add', t => {
+test('should export B.add', t => {
   t.is(type(B.add), 'Function')
 })
 
-test('should export and', t => {
+test('should export B.and', t => {
   t.is(type(B.and), 'Function')
 })
 
-test('should export compose', t => {
+test('should export B.compose', t => {
   t.is(type(B.compose), 'Function')
 })
 
-test('should export curry', t => {
+test('should export B.curry', t => {
   t.is(type(B.curry), 'Function')
 })
 
@@ -23,27 +23,27 @@ test('should export B.flatten', t => {
   t.is(type(B.flatten), 'Function')
 })
 
-test('should export gt', t => {
+test('should export B.gt', t => {
   t.is(type(B.gt), 'Function')
 })
 
-test('should export gte', t => {
+test('should export B.gte', t => {
   t.is(type(B.gte), 'Function')
 })
 
-test('should export head', t => {
+test('should export B.head', t => {
   t.is(type(B.head), 'Function')
 })
 
-test('should export lt', t => {
+test('should export B.lt', t => {
   t.is(type(B.lt), 'Function')
 })
 
-test('should export lte', t => {
+test('should export B.lte', t => {
   t.is(type(B.lte), 'Function')
 })
 
-test('should export map', t => {
+test('should export B.map', t => {
   t.is(type(B.map), 'Function')
 })
 
@@ -51,11 +51,11 @@ test('should export B.multiply', t => {
   t.is(type(B.multiply), 'Function')
 })
 
-test('should export or', t => {
+test('should export B.or', t => {
   t.is(type(B.or), 'Function')
 })
 
-test('should export pipe', t => {
+test('should export B.pipe', t => {
   t.is(type(B.pipe), 'Function')
 })
 
@@ -63,7 +63,7 @@ test('should export B.range', t => {
   t.is(type(B.range), 'Function')
 })
 
-test('should export slice', t => {
+test('should export B.slice', t => {
   t.is(type(B.slice), 'Function')
 })
 
@@ -71,10 +71,10 @@ test('should export B.subtract', t => {
   t.is(type(B.subtract), 'Function')
 })
 
-test('should export tail', t => {
+test('should export B.tail', t => {
   t.is(type(B.tail), 'Function')
 })
 
-test('should export type', t => {
+test('should export B.type', t => {
   t.is(type(B.type), 'Function')
 })
