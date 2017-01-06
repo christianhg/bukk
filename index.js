@@ -2,6 +2,7 @@ module.exports = {
   add: require('./src/add'),
   all: require('./src/all'),
   and: require('./src/and'),
+  any: require('./src/any'),
   compose: require('./src/compose'),
   curry: require('./src/curry'),
   equals: require('./src/equals'),
