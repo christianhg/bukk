@@ -19,6 +19,10 @@ test('should export B.curry', t => {
   t.is(type(B.curry), 'Function')
 })
 
+test('should export B.equals', t => {
+  t.is(type(B.equals), 'Function')
+})
+
 test('should export B.flatten', t => {
   t.is(type(B.flatten), 'Function')
 })

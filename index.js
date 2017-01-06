@@ -3,6 +3,7 @@ module.exports = {
   and: require('./src/and'),
   compose: require('./src/compose'),
   curry: require('./src/curry'),
+  equals: require('./src/equals'),
   flatten: require('./src/flatten'),
   gt: require('./src/gt'),
   gte: require('./src/gte'),
