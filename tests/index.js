@@ -7,6 +7,10 @@ test('should export B.add', t => {
   t.is(type(B.add), 'Function')
 })
 
+test('should export B.all', t => {
+  t.is(type(B.all), 'Function')
+})
+
 test('should export B.and', t => {
   t.is(type(B.and), 'Function')
 })
