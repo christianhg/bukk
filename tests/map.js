@@ -31,20 +31,6 @@ test('should map a Boolean', t => {
   t.deepEqual(map(inc, true), 2)
 })
 
-test('should not map Null', t => {
-  t.deepEqual(map(inc, null), null)
-})
-
-test('should not map a Symbol', t => {
-  const one = Symbol(1)
-
-  t.deepEqual(map(inc, one), one)
-})
-
-test('should not map Undefined', t => {
-  t.deepEqual(map(inc, undefined), undefined)
-})
-
 test('should map a Map', t => {
   t.deepEqual(
     map(inc, new Map([['x', 1], ['y', 2], ['z', 3]])),
