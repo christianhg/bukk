@@ -7,7 +7,7 @@ const any = (p, a) => {
     'Map': () => Array.from(a).some(([key, value]) => p(value)),
     'Object': () => Object.keys(a).some((x) => p(a[x])),
     'Set': () => any(p, [...a]),
-    'String': () => any(p, a.split('')),
+    'String': () => any(p, [...a]),
     '*': () => false
   }
   return (m[type(a)] || m['*'])()
