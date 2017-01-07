@@ -17,7 +17,7 @@ Not exactly. Well, not only for Norwegians. Inspired by [Ramda](https://github.c
 - **ES6 compliant**<br>
 *It is totally fine to do `B.map(B.add(1), new Set([1, 2, 3]))`. This will simply return `Set {2, 3, 4}`.*
 
-- **Feature rich**<br>
+- **Feature-rich**<br>
 *As seen above, `B.map` knows how to handle `Sets`. Similarly, other `B` functions that can operate on Arrays, typically knows how to operate on other data structures as well.*
 
 ## Examples
@@ -34,8 +34,6 @@ const allIsFoo = B.all(isFoo)
 
 allIsFoo({x: 'foo', y: 'foo', z: 'foo'})
 // => true
-
-
 ```
 
 ## Usage
