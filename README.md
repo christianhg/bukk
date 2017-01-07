@@ -1,18 +1,42 @@
-# bukk
+# bukk 🐐
 
 > A functional library for Norwegians.
 
 ## Why?
 
-Just kidding. Inspired by [ramda](https://github.com/ramda/ramda), this an automatically curried, data-last, functional JavaScript library.
+Not exactly. Well, not only for Norwegians. Inspired by [Ramda](https://github.com/ramda/ramda), this an automatically curried, data-last, functional JavaScript library.
 
-### How is this better than ramda?
+## Goals and philosophies
 
-It's not. It exists mainly for the purpose of letting its author get more experienced with functional programming.
+- **Declarative code**<br>
+*Much favored over "smart" code. As an example it is preferred to use existing higher-order functions like `Array.prototype.every()` instead of reimplementing similar logic using loops.*
 
-### "Bukk"?
+- **Predictable behaviors**<br>
+*`B.map(B.add(1), 1)` should return `2`. Not `[]`, `[undefined]` or `[2]`. Just `2`.*
 
-"Bukk" means "ram" in Norwegian.
+- **ES6 compliant**<br>
+*It is totally fine to do `B.map(B.add(1), new Set([1, 2, 3]))`. This will simply return `Set {2, 3, 4}`.*
+
+- **Feature rich**<br>
+*As seen above, `B.map` knows how to handle `Sets`. Similarly, other `B` functions that can operate on Arrays, typically knows how to operate on other data structures as well.*
+
+## Examples
+
+```js
+const inc = B.add(1)
+const incList = B.map(inc)
+
+incList([1, 2, 3])
+// => [2, 3, 4]
+
+const isFoo = B.equals('foo')
+const allIsFoo = B.all(isFoo)
+
+allIsFoo({x: 'foo', y: 'foo', z: 'foo'})
+// => true
+
+
+```
 
 ## Usage
 
@@ -33,17 +57,6 @@ Import module:
 ```js
 const B = require('bukk')
 ```
-
-### Example
-
-```js
-const inc = B.add(1)
-const incList = B.map(inc)
-
-incList([1, 2, 3])
-// ==> [2, 3, 4]
-```
-
 
 ## Development
 
@@ -66,3 +79,7 @@ Test in watch mode:
 ```
 yarn run watch:test
 ```
+
+## "Bukk"?
+
+"Bukk" means "ram" in Norwegian :)
