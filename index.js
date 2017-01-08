@@ -6,6 +6,7 @@ module.exports = {
   compose: require('./src/compose'),
   curry: require('./src/curry'),
   equals: require('./src/equals'),
+  filter: require('./src/filter'),
   flatten: require('./src/flatten'),
   gt: require('./src/gt'),
   gte: require('./src/gte'),
