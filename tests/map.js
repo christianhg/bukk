@@ -15,6 +15,16 @@ test('should map an Array', t => {
   t.deepEqual(map(inc, [1, 2, 3]), [2, 3, 4])
 })
 
+test('should map any Functor', t => {
+  const Just = x => ({
+    map: f => Just(f(x)),
+    value: x
+  })
+
+  t.deepEqual(map(inc, Just(1)).value, 2)
+  t.deepEqual(map(addBar, Just('foo')).value, 'foobar')
+})
+
 test('should map an Object', t => {
   t.deepEqual(map(inc, {x: 1, y: 2, z: 3}), {x: 2, y: 3, z: 4})
 })
