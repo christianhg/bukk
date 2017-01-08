@@ -6,6 +6,10 @@ test('should recognize Array', t => {
   t.is(type([]), 'Array')
 })
 
+test('should recognize Function', t => {
+  t.is(type(type), 'Function')
+})
+
 test('should recognize Map', t => {
   t.is(type(new Map().set('one', 1)), 'Map')
 })
