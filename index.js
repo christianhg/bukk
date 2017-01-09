@@ -5,6 +5,7 @@ module.exports = {
   any: require('./src/any'),
   compose: require('./src/compose'),
   curry: require('./src/curry'),
+  divide: require('./src/divide'),
   equals: require('./src/equals'),
   filter: require('./src/filter'),
   flatten: require('./src/flatten'),
