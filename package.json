@@ -1,8 +1,14 @@
 {
   "name": "bukk",
   "description": "A functional library for Norwegians",
-  "keywords": ["functional-programming", "fp", "curry", "data-last", "library"],
-  "version": "0.4.1",
+  "keywords": [
+    "functional-programming",
+    "fp",
+    "curry",
+    "data-last",
+    "library"
+  ],
+  "version": "0.5.0",
   "license": "MIT",
   "repository": "christianhg/bukk",
   "author": {
