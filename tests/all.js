@@ -6,6 +6,7 @@ import equals from '../src/equals'
 const isA = equals('a')
 const isFoo = equals('foo')
 const isZero = equals(0)
+const isTrue = equals(true)
 
 test('should test predicate on Array', t => {
   t.is(all(isFoo, ['foo', 'foo', 'foo']), true)
@@ -15,11 +16,21 @@ test('should test predicate on Array', t => {
   t.is(all(isZero, [1, 0, 1]), false)
 })
 
+test('should test predicate on Boolean', t => {
+  t.is(all(isTrue, true), true)
+  t.is(all(isTrue, false), false)
+})
+
 test('should test predicate on Map', t => {
   t.is(all(isFoo, new Map([[1, 'foo'], [2, 'foo'], [3, 'foo']])), true)
   t.is(all(isFoo, new Map([[1, 'foo'], [2, 'foo'], [3, 'bar']])), false)
   t.is(all(isFoo, new Map([[1, 'foo'], [2, 'bar'], [3, 'bar']])), false)
   t.is(all(isFoo, new Map([[1, 'bar'], [2, 'bar'], [3, 'bar']])), false)
+})
+
+test('should test predicate on Number', t => {
+  t.is(all(isZero, 0), true)
+  t.is(all(isZero, 1), false)
 })
 
 test('should test predicate on Object', t => {
