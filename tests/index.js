@@ -71,6 +71,10 @@ test('should export B.multiply', t => {
   t.is(type(B.multiply), 'Function')
 })
 
+test('should export B.none', t => {
+  t.is(type(B.none), 'Function')
+})
+
 test('should export B.or', t => {
   t.is(type(B.or), 'Function')
 })

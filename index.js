@@ -16,6 +16,7 @@ module.exports = {
   lte: require('./src/lte'),
   map: require('./src/map'),
   multiply: require('./src/multiply'),
+  none: require('./src/none'),
   or: require('./src/or'),
   pipe: require('./src/pipe'),
   range: require('./src/range'),
