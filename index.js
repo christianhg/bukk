@@ -12,6 +12,7 @@ module.exports = {
   gt: require('./src/gt'),
   gte: require('./src/gte'),
   head: require('./src/head'),
+  last: require('./src/last'),
   lt: require('./src/lt'),
   lte: require('./src/lte'),
   map: require('./src/map'),

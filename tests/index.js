@@ -55,6 +55,10 @@ test('should export B.head', t => {
   t.is(type(B.head), 'Function')
 })
 
+test('should export B.last', t => {
+  t.is(type(B.last), 'Function')
+})
+
 test('should export B.lt', t => {
   t.is(type(B.lt), 'Function')
 })
