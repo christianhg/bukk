@@ -15,6 +15,10 @@ test('should not return the last of a Number', t => {
   t.is(last(42), undefined)
 })
 
+test('should return the head of an Object', t => {
+  t.is(last({x: 1, y: 2, z: 3}), 3)
+})
+
 test('should return last of a Set', t => {
   t.is(last(new Set([1, 2, 3])), 3)
   t.is(last(new Set(['foo', 'bar', 'baz'])), 'baz')
