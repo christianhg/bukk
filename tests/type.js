@@ -14,6 +14,10 @@ test('should recognize Map', t => {
   t.is(type(new Map().set('one', 1)), 'Map')
 })
 
+test('should recognize NaN', t => {
+  t.is(type(NaN), 'Number')
+})
+
 test('should recognize Null', t => {
   t.is(type(null), 'Null')
 })
