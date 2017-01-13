@@ -21,6 +21,7 @@ module.exports = {
   or: require('./src/or'),
   pipe: require('./src/pipe'),
   range: require('./src/range'),
+  reject: require('./src/reject'),
   slice: require('./src/slice'),
   subtract: require('./src/subtract'),
   tail: require('./src/tail'),
