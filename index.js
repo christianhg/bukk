@@ -25,5 +25,6 @@ module.exports = {
   slice: require('./src/slice'),
   subtract: require('./src/subtract'),
   tail: require('./src/tail'),
+  trim: require('./src/trim'),
   type: require('./src/type')
 }

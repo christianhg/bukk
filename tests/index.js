@@ -107,6 +107,10 @@ test('should export B.tail', t => {
   t.is(type(B.tail), 'Function')
 })
 
+test('should export B.trim', t => {
+  t.is(type(B.trim), 'Function')
+})
+
 test('should export B.type', t => {
   t.is(type(B.type), 'Function')
 })
