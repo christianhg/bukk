@@ -95,6 +95,10 @@ test('should export B.reject', t => {
   t.is(type(B.reject), 'Function')
 })
 
+test('should export B.reduce', t => {
+  t.is(type(B.reduce), 'Function')
+})
+
 test('should export B.slice', t => {
   t.is(type(B.slice), 'Function')
 })
