@@ -8,6 +8,7 @@ module.exports = {
   divide: require('./src/divide'),
   equals: require('./src/equals'),
   filter: require('./src/filter'),
+  find: require('./src/find'),
   flatten: require('./src/flatten'),
   gt: require('./src/gt'),
   gte: require('./src/gte'),
