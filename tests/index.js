@@ -27,6 +27,10 @@ test('should export B.curry', t => {
   t.is(type(B.curry), 'Function')
 })
 
+test('should export B.dec', t => {
+  t.is(type(B.dec), 'Function')
+})
+
 test('should export B.divide', t => {
   t.is(type(B.divide), 'Function')
 })
