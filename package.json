@@ -10,7 +10,7 @@
   ],
   "version": "0.7.0",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "src/b.js",
   "repository": "christianhg/bukk",
   "author": {
     "name": "Christian Grøngaard",
