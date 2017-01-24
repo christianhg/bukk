@@ -12,10 +12,10 @@ Not exactly. Well, not only for Norwegians. Inspired by [Ramda](https://github.c
 *Much favored over "smart" code. As an example it is preferred to use existing higher-order functions like `Array.prototype.every()` instead of reimplementing similar logic using loops.*
 
 - **Predictable behaviors**<br>
-*`B.map(B.add(1), 1)` should return `2`. Not `[]`, `[undefined]` or `[2]`. Just `2`.*
+*`B.map(B.inc, 1)` should return `2`. Not `[]`, `[undefined]` or `[2]`. Just `2`.*
 
 - **ES6 compliant**<br>
-*It is totally fine to do `B.map(B.add(1), new Set([1, 2, 3]))`. This will simply return `Set {2, 3, 4}`.*
+*It is totally fine to do `B.map(B.inc, new Set([1, 2, 3]))`. This will simply return `Set {2, 3, 4}`.*
 
 - **Feature-rich**<br>
 *As seen above, `B.map` knows how to handle `Sets`. Similarly, other `B` functions that can operate on Arrays, typically knows how to operate on other data structures as well.*
@@ -23,8 +23,7 @@ Not exactly. Well, not only for Norwegians. Inspired by [Ramda](https://github.c
 ## Examples
 
 ```js
-const inc = B.add(1)
-const incList = B.map(inc)
+const incList = B.map(B.inc)
 
 incList([1, 2, 3])
 // => [2, 3, 4]
