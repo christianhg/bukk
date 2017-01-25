@@ -55,6 +55,12 @@ Import module:
 const B = require('bukk')
 ```
 
+Or add the `B` variable to global scope:
+
+```html
+<script src="nodule_modules/bukk/dist/bukk.js"></script>
+```
+
 ## Development
 
 Install dependencies:
