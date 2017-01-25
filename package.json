@@ -8,7 +8,7 @@
     "data-last",
     "library"
   ],
-  "version": "0.7.0",
+  "version": "0.8.0",
   "license": "MIT",
   "files": [
     "dist",
@@ -31,7 +31,9 @@
     "files": "tests/*.js"
   },
   "standard": {
-    "ignore": ["dist"]
+    "ignore": [
+      "dist"
+    ]
   },
   "devDependencies": {
     "ava": "^0.17.0",
