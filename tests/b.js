@@ -67,6 +67,10 @@ test('should export B.inc', t => {
   t.is(type(B.inc), 'Function')
 })
 
+test('should export B.init', t => {
+  t.is(type(B.init), 'Function')
+})
+
 test('should export B.last', t => {
   t.is(type(B.last), 'Function')
 })

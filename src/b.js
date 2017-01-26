@@ -15,6 +15,7 @@ module.exports = {
   gte: require('./gte'),
   head: require('./head'),
   inc: require('./inc'),
+  init: require('./init'),
   last: require('./last'),
   lt: require('./lt'),
   lte: require('./lte'),
