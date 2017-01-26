@@ -8,7 +8,11 @@ test('should be defined', t => {
 })
 
 test('should be curried', t => {
+  const addFive = add(5)
+
   t.is(type(add(1)), 'Function')
+  t.is(addFive(1), 6)
+  t.is(addFive(-5), 0)
 })
 
 test('should add two numbers', t => {
