@@ -5,7 +5,7 @@ import add from '../src/add'
 import inc from '../src/inc'
 import multiply from '../src/multiply'
 
-test('should compose functions', t => {
+test('should compose functions from right to left', t => {
   const double = multiply(2)
   const addFive = add(5)
 
