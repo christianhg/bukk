@@ -20,9 +20,9 @@
     "email": "christianhg@gmail.com"
   },
   "scripts": {
-    "build": "rm -rf dist && standard && ava && webpack",
+    "build": "rm -rf dist && standard && nyc ava && webpack",
     "lint": "standard",
-    "test": "standard && ava",
+    "test": "standard && nyc ava",
     "watch:test": "standard && ava --watch"
   },
   "ava": {
@@ -48,6 +48,8 @@
     "babel-loader": "^6.2.10",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.22.0",
+    "coveralls": "^2.11.15",
+    "nyc": "^10.1.2",
     "standard": "^8.6.0",
     "webpack": "beta"
   }
