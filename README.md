@@ -39,19 +39,21 @@ allIsFoo({x: 'foo', y: 'foo', z: 'foo'})
 // => true
 ```
 
-## Usage
+## Installation
 
 Install using `yarn`:
 
-```
+```bash
 yarn add bukk
 ```
 
 Or `npm`:
 
-```
+```bash
 npm install --save bukk
 ```
+
+## Usage
 
 Import module:
 
@@ -69,7 +71,7 @@ Or add the `B` variable to global scope:
 
 Install dependencies:
 
-```
+```bash
 yarn install
 ```
 
@@ -77,13 +79,13 @@ yarn install
 
 Test once:
 
-```
+```bash
 yarn run test
 ```
 
 Test in watch mode:
 
-```
+```bash
 yarn run watch:test
 ```
 
