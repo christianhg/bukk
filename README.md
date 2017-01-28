@@ -2,6 +2,9 @@
 
 > A functional library for Norwegians.
 
+[![dependencies](https://david-dm.org/christianhg/bukk.svg)](https://david-dm.org/christianhg/bukk)
+[![npm module](https://badge.fury.io/js/bukk.svg)](https://www.npmjs.org/package/bukk)
+
 ## Why?
 
 Not exactly. Well, not only for Norwegians. Inspired by [Ramda](https://github.com/ramda/ramda), this an automatically curried, data-last, functional JavaScript library.
