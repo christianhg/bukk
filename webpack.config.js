@@ -7,7 +7,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bukk.js',
     library: 'B',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   module: {
     loaders: [
