@@ -1,6 +1,6 @@
-const curry = require('./curry')
+import curry from './curry'
 
 const divide = (a, b) =>
   a / b
 
-module.exports = curry(divide)
+export default curry(divide)

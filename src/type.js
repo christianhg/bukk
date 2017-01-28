@@ -1,6 +1,6 @@
-const curry = require('./curry')
+import curry from './curry'
 
 const type = a =>
   Object.prototype.toString.call(a).slice(8, -1)
 
-module.exports = curry(type)
+export default curry(type)

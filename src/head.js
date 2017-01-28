@@ -1,4 +1,4 @@
-const type = require('./type')
+import type from './type'
 
 const head = a => {
   const m = {
@@ -13,4 +13,4 @@ const head = a => {
   return (m[type(a)] || m['*'])()
 }
 
-module.exports = head
+export default head

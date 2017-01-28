@@ -1,6 +1,6 @@
-const slice = require('./slice')
+import slice from './slice'
 
 const tail = xs =>
   slice(1, xs.length, xs)
 
-module.exports = tail
+export default tail

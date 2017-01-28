@@ -1,4 +1,4 @@
-const type = require('./type')
+import type from './type'
 
 const trim = a => {
   const m = {
@@ -9,4 +9,4 @@ const trim = a => {
   return (m[type(a)] || m['*'])()
 }
 
-module.exports = trim
+export default trim

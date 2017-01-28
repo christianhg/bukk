@@ -1,6 +1,6 @@
-const curry = require('./curry')
+import curry from './curry'
 
 const subtract = (a, b) =>
   a - b
 
-module.exports = curry(subtract)
+export default curry(subtract)

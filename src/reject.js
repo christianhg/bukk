@@ -1,5 +1,5 @@
-const curry = require('./curry')
-const type = require('./type')
+import curry from './curry'
+import type from './type'
 
 const reject = (p, a) => {
   const m = {
@@ -19,4 +19,4 @@ const reject = (p, a) => {
   return (m[type(a)] || m['*'])()
 }
 
-module.exports = curry(reject)
+export default curry(reject)

@@ -1,5 +1,5 @@
-const curry = require('./curry')
-const type = require('./type')
+import curry from './curry'
+import type from './type'
 
 const equals = (a, b) => {
   const m = {
@@ -17,4 +17,4 @@ const equals = (a, b) => {
   return (m[type(a)] || m['*'])()
 }
 
-module.exports = curry(equals)
+export default curry(equals)

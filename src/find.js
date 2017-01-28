@@ -1,5 +1,5 @@
-const curry = require('./curry')
-const type = require('./type')
+import curry from './curry'
+import type from './type'
 
 const find = (p, a) => {
   const m = {
@@ -14,4 +14,4 @@ const find = (p, a) => {
   return (m[type(a)] || m['*'])()
 }
 
-module.exports = curry(find)
+export default curry(find)

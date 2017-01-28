@@ -1,5 +1,5 @@
-const curry = require('./curry')
-const type = require('./type')
+import curry from './curry'
+import type from './type'
 
 const filter = (p, a) => {
   const m = {
@@ -20,4 +20,4 @@ const filter = (p, a) => {
     : (m[type(a)] || m['*'])()
 }
 
-module.exports = curry(filter)
+export default curry(filter)

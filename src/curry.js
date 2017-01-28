@@ -4,4 +4,4 @@ const curry = (f, recieved = [], arity = f.length) =>
     : (...args) =>
       curry(f, [...recieved, ...args], arity - args.length)
 
-module.exports = curry
+export default curry

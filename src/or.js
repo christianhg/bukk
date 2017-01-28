@@ -1,5 +1,6 @@
-const curry = require('./curry')
+import curry from './curry'
 
-const or = (a, b) => a || b
+const or = (a, b) =>
+  a || b
 
-module.exports = curry(or)
+export default curry(or)

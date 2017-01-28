@@ -1,5 +1,5 @@
-const init = require('./init')
-const last = require('./last')
+import init from './init'
+import last from './last'
 
 const _compose = (fs, result) =>
   fs.length === 0
@@ -10,4 +10,4 @@ const compose = (...fs) =>
   (...args) =>
     _compose(init(fs), last(fs).apply(undefined, args))
 
-module.exports = compose
+export default compose

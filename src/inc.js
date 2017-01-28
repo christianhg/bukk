@@ -1,5 +1,5 @@
-const add = require('./add')
+import add from './add'
 
 const inc = add(1)
 
-module.exports = inc
+export default inc

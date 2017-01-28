@@ -1,5 +1,6 @@
-const curry = require('./curry')
+import curry from './curry'
 
-const gte = (a, b) => a >= b
+const gte = (a, b) =>
+  a >= b
 
-module.exports = curry(gte)
+export default curry(gte)

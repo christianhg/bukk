@@ -1,8 +1,9 @@
-const curry = require('./curry')
-const slice = require('./slice')
+import curry from './curry'
+import slice from './slice'
 
-const take = (n, a) => n > 0
-  ? slice(0, n, a)
-  : slice(0, 0, a)
+const take = (n, a) =>
+  n > 0
+    ? slice(0, n, a)
+    : slice(0, 0, a)
 
-module.exports = curry(take)
+export default curry(take)

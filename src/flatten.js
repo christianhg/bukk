@@ -1,4 +1,4 @@
-const type = require('./type')
+import type from './type'
 
 const flatten = a =>
   a.reduce((b, x) =>
@@ -6,4 +6,4 @@ const flatten = a =>
       ? [...b, ...flatten(x)]
       : [...b, x], [])
 
-module.exports = flatten
+export default flatten

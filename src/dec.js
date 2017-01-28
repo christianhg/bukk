@@ -1,5 +1,5 @@
-const add = require('./add')
+import add from './add'
 
 const dec = add(-1)
 
-module.exports = dec
+export default dec

@@ -1,6 +1,6 @@
-const curry = require('./curry')
+import curry from './curry'
 
 const multiply = (a, b) =>
   a * b
 
-module.exports = curry(multiply)
+export default curry(multiply)
