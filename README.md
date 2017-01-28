@@ -4,6 +4,7 @@
 
 [![dependencies](https://david-dm.org/christianhg/bukk.svg)](https://david-dm.org/christianhg/bukk)
 [![npm module](https://badge.fury.io/js/bukk.svg)](https://www.npmjs.org/package/bukk)
+[![Build Status](https://travis-ci.org/christianhg/bukk.svg?branch=master)](https://travis-ci.org/christianhg/bukk)
 
 ## Why?
 
