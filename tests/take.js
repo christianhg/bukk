@@ -7,12 +7,20 @@ test('should take from an Array', t => {
   t.deepEqual(take(1, [1, 2, 3, 4, 5]), [1])
 })
 
+test('should operate on a Map', t => {
+  t.deepEqual(take(2, new Map([['a', 1], ['b', 2], ['c', 3]])), new Map([['a', 1], ['b', 2]]))
+})
+
 test('should not take from a Number', t => {
   t.is(take(1, 42), 42)
 })
 
 test('should not take from an Object', t => {
   t.deepEqual(take(1, {a: 1, b: 2}), {a: 1, b: 2})
+})
+
+test('should operate on a Set', t => {
+  t.deepEqual(take(3, new Set(['a', 'b', 'c', 'd', 'e'])), new Set(['a', 'b', 'c']))
 })
 
 test('should slice a String', t => {
