@@ -31,6 +31,11 @@
       "babel-register"
     ]
   },
+  "nyc": {
+    "include": [
+      "src/*.js"
+    ]
+  },
   "babel": {
     "presets": [
       "@ava/stage-4"
