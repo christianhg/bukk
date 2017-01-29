@@ -2,7 +2,7 @@
 
 > A functional library for Norwegians.
 
-[![dependencies](https://david-dm.org/christianhg/bukk.svg)](https://david-dm.org/christianhg/bukk)
+[![Dependencies](https://david-dm.org/christianhg/bukk.svg)](https://david-dm.org/christianhg/bukk)
 [![npm module](https://badge.fury.io/js/bukk.svg)](https://www.npmjs.org/package/bukk)
 [![Build Status](https://travis-ci.org/christianhg/bukk.svg?branch=master)](https://travis-ci.org/christianhg/bukk)
 [![Coverage Status](https://coveralls.io/repos/github/christianhg/bukk/badge.svg?branch=master)](https://coveralls.io/github/christianhg/bukk?branch=master)
@@ -25,19 +25,67 @@ Not exactly. Well, not only for Norwegians. Inspired by [Ramda](https://github.c
 - **Feature-rich**<br>
 *As seen above, `B.map` knows how to handle `Sets`. Similarly, other `B` functions that can operate on Arrays, typically knows how to operate on other data structures as well.*
 
+- **[No dependencies](https://david-dm.org/christianhg/bukk)**
+
+- **[Great code coverage](https://coveralls.io/github/christianhg/bukk)**
+
 ## Examples
 
 ```js
-const incList = B.map(B.inc)
+const incCollection = B.map(B.inc)
 
-incList([1, 2, 3])
+incCollection([1, 2, 3])
 // => [2, 3, 4]
 
+incCollection(new Set([1, 2, 3]))
+// => Set {2, 3, 4}
+```
+
+```js
 const isFoo = B.equals('foo')
 const allIsFoo = B.all(isFoo)
 
 allIsFoo({x: 'foo', y: 'foo', z: 'foo'})
 // => true
+
+allIsFoo(['foo', 'bar', 'baz'])
+// => false
+```
+
+```js
+const takeTwo = B.take(2)
+
+takeTwo(new Map([[1, 'a'], [2, 'b'], [3, 'c']]))
+// => Map { 1 => 'a', 2 => 'b' }
+
+takeTwo('foobar')
+// => 'fo'
+```
+
+```js
+const double = B.multiply(2)
+const addFive = B.add(5)
+const incDoubleAndAddFive = B.compose(addFive, double, B.inc)
+
+incDoubleAndAddFive(1)
+// => 9
+```
+
+```js
+const sqrtOfProduct = B.pipe(B.multiply, Math.sqrt)
+
+sqrtOfProduct(3, 12)
+// => 6
+```
+
+```js
+const propertyIs = (v, p, o) => B.equals(o[p], v)
+const isDone = B.curry(propertyIs)(true, 'done')
+const getFinished = B.filter(isDone)
+const processes = [{process: 'a', done: false}, {process: 'b', done: true}, {process: 'c', done: false}]
+
+getFinished(processes)
+// => [{process: 'b', done: true}]
 ```
 
 ## Installation
