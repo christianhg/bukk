@@ -55,3 +55,7 @@ test('should test predicate on String', t => {
   t.is(none(isA, 'abb'), false)
   t.is(none(isA, 'bbb'), true)
 })
+
+test('should not operate on a Symbol', t => {
+  t.is(none(isA, Symbol('a')), false)
+})
