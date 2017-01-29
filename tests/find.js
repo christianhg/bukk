@@ -30,6 +30,10 @@ test('should operate on an Object', t => {
   t.is(find(isOdd, {x: 42, y: 43, z: 44}), 43)
 })
 
+test('should not operate on a Number', t => {
+  t.is(find(isOdd, 42), undefined)
+})
+
 test('should operate on a Set', t => {
   t.is(find(isFoo, new Set(['foo', 'bar', 'baz'])), 'foo')
   t.is(find(isOdd, new Set([42, 43, 44, 45])), 43)
