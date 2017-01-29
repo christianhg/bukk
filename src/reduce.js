@@ -6,6 +6,7 @@ const reduce = (f, i, a) => {
     'Map': () => Array.from(a).reduce((b, [key, value]) => f(b, value), i),
     'Object': () => Object.keys(a).reduce((b, key) => f(b, a[key]), i),
     'Set': () => reduce(f, i, [...a]),
+    'String': () => reduce(f, i, [...a]),
     '*': () => a
   }
 
