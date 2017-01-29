@@ -56,3 +56,7 @@ test('should test predicate on String', t => {
   t.is(any(isA, 'abb'), true)
   t.is(any(isA, 'bbb'), false)
 })
+
+test('should not operate on a Symbol', t => {
+  t.is(any(isA, Symbol('a')), false)
+})
