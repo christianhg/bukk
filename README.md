@@ -1,6 +1,6 @@
 # bukk 🐐
 
-> A functional library for Norwegians.
+> Functional programming for Norwegians ⛷️
 
 [![Dependencies](https://david-dm.org/christianhg/bukk.svg)](https://david-dm.org/christianhg/bukk)
 [![npm module](https://badge.fury.io/js/bukk.svg)](https://www.npmjs.org/package/bukk)
