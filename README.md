@@ -79,13 +79,20 @@ sqrtOfProduct(3, 12)
 ```
 
 ```js
-const propertyIs = (v, p, o) => B.equals(o[p], v)
-const isDone = B.curry(propertyIs)(true, 'done')
-const getFinished = B.filter(isDone)
-const processes = [{process: 'a', done: false}, {process: 'b', done: true}, {process: 'c', done: false}]
+const multiplyThree = (a, b, c) => a * b * c
+const multiplyThreeCurried = B.curry(multiplyThree)
 
-getFinished(processes)
-// => [{process: 'b', done: true}]
+multiplyThreeCurried(2)
+// => Function
+
+multiplyThreeCurried(2)(3)
+multiplyThreeCurried(2, 3)
+// => Function
+
+multiplyThreeCurried(2)(3)(4)
+multiplyThreeCurried(2, 3)(4)
+multiplyThreeCurried(2)(3, 4)
+// => 24
 ```
 
 ## Installation
