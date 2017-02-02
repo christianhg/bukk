@@ -15,8 +15,8 @@ test('should not operate on a Number', t => {
   t.is(head(42), undefined)
 })
 
-test('should operate on an Object', t => {
-  t.is(head({x: 1, y: 2, z: 3}), 1)
+test('should not operate on an Object', t => {
+  t.is(head({x: 1, y: 2, z: 3}), undefined)
 })
 
 test('should operate on a Set', t => {
