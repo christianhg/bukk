@@ -12,11 +12,11 @@ test('should operate on a Map', t => {
 })
 
 test('should not operate on a Number', t => {
-  t.is(take(1, 42), 42)
+  t.is(take(1, 42), undefined)
 })
 
 test('should not operate on an Object', t => {
-  t.deepEqual(take(1, {a: 1, b: 2}), {a: 1, b: 2})
+  t.deepEqual(take(1, {a: 1, b: 2}), undefined)
 })
 
 test('should operate on a Set', t => {

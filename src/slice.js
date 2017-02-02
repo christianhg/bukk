@@ -7,7 +7,7 @@ const slice = (from, to, a) => {
     'Map': () => new Map([...a].slice(from, to)),
     'Set': () => new Set([...a].slice(from, to)),
     'String': () => a.slice(from, to),
-    '*': () => a
+    '*': () => undefined
   }
 
   return (m[type(a)] || m['*'])()

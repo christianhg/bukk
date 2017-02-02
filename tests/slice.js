@@ -8,11 +8,11 @@ test('should slice an Array', t => {
 })
 
 test('should not slice a Number', t => {
-  t.is(slice(0, 1, 42), 42)
+  t.is(slice(0, 1, 42), undefined)
 })
 
 test('should not slice an Object', t => {
-  t.deepEqual(slice(0, 1, {a: 1, b: 2}), {a: 1, b: 2})
+  t.deepEqual(slice(0, 1, {a: 1, b: 2}), undefined)
 })
 
 test('should slice a String', t => {
