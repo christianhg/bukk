@@ -56,6 +56,6 @@
     "coveralls": "^2.11.15",
     "nyc": "^10.1.2",
     "standard": "^8.6.0",
-    "webpack": "beta"
+    "webpack": "^2.2.1"
   }
 }
