@@ -1,6 +1,6 @@
 import test from 'ava'
 
-import B from '../src/b'
+import B from '../src/bukk'
 import type from '../src/type'
 
 test('should export B.add', t => {
