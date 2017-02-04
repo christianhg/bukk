@@ -4,7 +4,7 @@ import type from './type'
 const reject = (p, a) => {
   const m = {
     'Array': () => [...a].filter(x => !p(x)),
-    'Map': () => new Map(Array.from(a).filter(([key, value]) => !p(value))),
+    'Map': () => new Map([...a].filter(([key, value]) => !p(value))),
     'Object': () => Object.keys(a).reduce((b, key) => {
       if (!p(a[key])) {
         b[key] = a[key]

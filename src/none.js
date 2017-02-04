@@ -5,7 +5,7 @@ const none = (p, a) => {
   const m = {
     'Array': () => !a.some(p),
     'Boolean': () => !p(a),
-    'Map': () => !Array.from(a).some(([key, value]) => p(value)),
+    'Map': () => ![...a].some(([key, value]) => p(value)),
     'Number': () => !p(a),
     'Object': () => !Object.keys(a).some((x) => p(a[x])),
     'Set': () => none(p, [...a]),

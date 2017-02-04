@@ -6,12 +6,10 @@ const equals = (a, b) => {
     'Array': () => a.length === b.length &&
       a.every((x, i) => equals(x, b[i])),
     'Date': () => a.getTime() === b.getTime(),
-    'Map': () => a.size === b.size &&
-      equals(Array.from(a), Array.from(b)),
+    'Map': () => a.size === b.size && equals([...a], [...b]),
     'Object': () => Object.keys(a).length === Object.keys(b).length &&
       Object.keys(a).every(x => equals(a[x], b[x])),
-    'Set': () => a.size === b.size &&
-      equals(Array.from(a), Array.from(b)),
+    'Set': () => a.size === b.size && equals([...a], [...b]),
     '*': () => a === b
   }
   return (m[type(a)] || m['*'])()

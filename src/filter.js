@@ -3,7 +3,7 @@ import type from './type'
 
 const filter = (p, a) => {
   const m = {
-    'Map': () => new Map(Array.from(a).filter(([key, value]) => p(value))),
+    'Map': () => new Map([...a].filter(([key, value]) => p(value))),
     'Object': () => Object.keys(a).reduce((b, key) => {
       if (p(a[key])) {
         b[key] = a[key]
