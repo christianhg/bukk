@@ -20,10 +20,10 @@
     "email": "christianhg@gmail.com"
   },
   "scripts": {
-    "build": "rm -rf dist && standard && nyc ava && webpack",
+    "build": "rm -rf dist && standard & nyc ava && webpack",
     "lint": "standard",
-    "test": "standard && nyc ava",
-    "watch:test": "standard && ava --watch"
+    "test": "standard & nyc ava",
+    "watch:test": "standard & ava --watch"
   },
   "ava": {
     "files": "tests/*.js",
