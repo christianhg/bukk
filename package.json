@@ -20,7 +20,8 @@
     "email": "christianhg@gmail.com"
   },
   "scripts": {
-    "build": "rm -rf dist && npm run lint & nyc ava && webpack",
+    "prebuild": "rm -rf dist",
+    "build": "npm run lint & nyc ava && webpack",
     "lint": "standard --verbose | snazzy",
     "test": "npm run lint & nyc ava",
     "watch:test": "npm run lint & ava --watch"
