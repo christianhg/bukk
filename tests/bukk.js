@@ -107,6 +107,10 @@ test('should export B.pipe', t => {
   t.is(type(B.pipe), 'Function')
 })
 
+test('should export B.prepend', t => {
+  t.is(type(B.prepend), 'Function')
+})
+
 test('should export B.range', t => {
   t.is(type(B.range), 'Function')
 })

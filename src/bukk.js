@@ -24,6 +24,7 @@ import multiply from './multiply'
 import none from './none'
 import or from './or'
 import pipe from './pipe'
+import prepend from './prepend'
 import range from './range'
 import reject from './reject'
 import reduce from './reduce'
@@ -61,6 +62,7 @@ const B = {
   none,
   or,
   pipe,
+  prepend,
   range,
   reject,
   reduce,
