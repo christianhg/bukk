@@ -1,5 +1,5 @@
 import curry from './curry'
-import type from './type'
+import kind from './kind'
 
 const filter = (p, a) => {
   const m = {
@@ -15,9 +15,9 @@ const filter = (p, a) => {
     '*': () => a
   }
 
-  return type(a.filter) === 'Function'
+  return kind(a.filter) === 'Function'
     ? a.filter(p)
-    : (m[type(a)] || m['*'])()
+    : (m[kind(a)] || m['*'])()
 }
 
 export default curry(filter)

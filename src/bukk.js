@@ -16,6 +16,7 @@ import gte from './gte'
 import head from './head'
 import inc from './inc'
 import init from './init'
+import kind from './kind'
 import last from './last'
 import lt from './lt'
 import lte from './lte'
@@ -34,7 +35,6 @@ import subtract from './subtract'
 import tail from './tail'
 import take from './take'
 import trim from './trim'
-import type from './type'
 
 const B = {
   add,
@@ -56,6 +56,7 @@ const B = {
   inc,
   init,
   last,
+  kind,
   lt,
   lte,
   map,
@@ -72,8 +73,7 @@ const B = {
   subtract,
   tail,
   take,
-  trim,
-  type
+  trim
 }
 
 export default B

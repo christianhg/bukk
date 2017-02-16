@@ -1,5 +1,5 @@
 import curry from './curry'
-import type from './type'
+import kind from './kind'
 
 const prepend = (x, xs) => {
   const m = {
@@ -10,7 +10,7 @@ const prepend = (x, xs) => {
     '*': () => xs
   }
 
-  return (m[type(xs)] || m['*'])()
+  return (m[kind(xs)] || m['*'])()
 }
 
 export default curry(prepend)

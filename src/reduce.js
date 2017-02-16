@@ -1,5 +1,5 @@
 import curry from './curry'
-import type from './type'
+import kind from './kind'
 
 const reduce = (f, i, a) => {
   const m = {
@@ -10,9 +10,9 @@ const reduce = (f, i, a) => {
     '*': () => a
   }
 
-  return type(a.reduce) === 'Function'
+  return kind(a.reduce) === 'Function'
     ? a.reduce(f, i)
-    : (m[type(a)] || m['*'])()
+    : (m[kind(a)] || m['*'])()
 }
 
 export default curry(reduce)

@@ -1,5 +1,5 @@
 import curry from './curry'
-import type from './type'
+import kind from './kind'
 
 const none = (p, a) => {
   const m = {
@@ -12,7 +12,7 @@ const none = (p, a) => {
     'String': () => none(p, [...a]),
     '*': () => false
   }
-  return (m[type(a)] || m['*'])()
+  return (m[kind(a)] || m['*'])()
 }
 
 export default curry(none)

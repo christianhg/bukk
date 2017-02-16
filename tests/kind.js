@@ -1,47 +1,47 @@
 import test from 'ava'
 
-import type from '../src/type'
+import kind from '../src/kind'
 
 test('should recognize Array', t => {
-  t.is(type([]), 'Array')
+  t.is(kind([]), 'Array')
 })
 
 test('should recognize Function', t => {
-  t.is(type(type), 'Function')
+  t.is(kind(kind), 'Function')
 })
 
 test('should recognize Map', t => {
-  t.is(type(new Map().set('one', 1)), 'Map')
+  t.is(kind(new Map().set('one', 1)), 'Map')
 })
 
 test('should recognize NaN', t => {
-  t.is(type(NaN), 'Number')
+  t.is(kind(NaN), 'Number')
 })
 
 test('should recognize Null', t => {
-  t.is(type(null), 'Null')
+  t.is(kind(null), 'Null')
 })
 
 test('should recognize Number', t => {
-  t.is(type(1), 'Number')
+  t.is(kind(1), 'Number')
 })
 
 test('should recognize Object', t => {
-  t.is(type({}), 'Object')
+  t.is(kind({}), 'Object')
 })
 
 test('should recognize Set', t => {
-  t.is(type(new Set([1, 2, 3])), 'Set')
+  t.is(kind(new Set([1, 2, 3])), 'Set')
 })
 
 test('should recognize String', t => {
-  t.is(type('foo'), 'String')
+  t.is(kind('foo'), 'String')
 })
 
 test('should recognize Symbol', t => {
-  t.is(type(Symbol(1)), 'Symbol')
+  t.is(kind(Symbol(1)), 'Symbol')
 })
 
 test('should recognize Undefined', t => {
-  t.is(type(undefined), 'Undefined')
+  t.is(kind(undefined), 'Undefined')
 })

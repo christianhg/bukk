@@ -1,5 +1,5 @@
 import curry from './curry'
-import type from './type'
+import kind from './kind'
 
 const slice = (from, to, a) => {
   const m = {
@@ -10,7 +10,7 @@ const slice = (from, to, a) => {
     '*': () => undefined
   }
 
-  return (m[type(a)] || m['*'])()
+  return (m[kind(a)] || m['*'])()
 }
 
 export default curry(slice)

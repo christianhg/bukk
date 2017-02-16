@@ -1,152 +1,152 @@
 import test from 'ava'
 
 import B from '../src/bukk'
-import type from '../src/type'
+import kind from '../src/kind'
 
 test('should export B.add', t => {
-  t.is(type(B.add), 'Function')
+  t.is(kind(B.add), 'Function')
 })
 
 test('should export B.all', t => {
-  t.is(type(B.all), 'Function')
+  t.is(kind(B.all), 'Function')
 })
 
 test('should export B.and', t => {
-  t.is(type(B.and), 'Function')
+  t.is(kind(B.and), 'Function')
 })
 
 test('should export B.any', t => {
-  t.is(type(B.any), 'Function')
+  t.is(kind(B.any), 'Function')
 })
 
 test('should export B.append', t => {
-  t.is(type(B.append), 'Function')
+  t.is(kind(B.append), 'Function')
 })
 
 test('should export B.compose', t => {
-  t.is(type(B.compose), 'Function')
+  t.is(kind(B.compose), 'Function')
 })
 
 test('should export B.curry', t => {
-  t.is(type(B.curry), 'Function')
+  t.is(kind(B.curry), 'Function')
 })
 
 test('should export B.dec', t => {
-  t.is(type(B.dec), 'Function')
+  t.is(kind(B.dec), 'Function')
 })
 
 test('should export B.divide', t => {
-  t.is(type(B.divide), 'Function')
+  t.is(kind(B.divide), 'Function')
 })
 
 test('should export B.equals', t => {
-  t.is(type(B.equals), 'Function')
+  t.is(kind(B.equals), 'Function')
 })
 
 test('should export B.filter', t => {
-  t.is(type(B.filter), 'Function')
+  t.is(kind(B.filter), 'Function')
 })
 
 test('should export B.find', t => {
-  t.is(type(B.find), 'Function')
+  t.is(kind(B.find), 'Function')
 })
 
 test('should export B.flatten', t => {
-  t.is(type(B.flatten), 'Function')
+  t.is(kind(B.flatten), 'Function')
 })
 
 test('should export B.gt', t => {
-  t.is(type(B.gt), 'Function')
+  t.is(kind(B.gt), 'Function')
 })
 
 test('should export B.gte', t => {
-  t.is(type(B.gte), 'Function')
+  t.is(kind(B.gte), 'Function')
 })
 
 test('should export B.head', t => {
-  t.is(type(B.head), 'Function')
+  t.is(kind(B.head), 'Function')
 })
 
 test('should export B.inc', t => {
-  t.is(type(B.inc), 'Function')
+  t.is(kind(B.inc), 'Function')
 })
 
 test('should export B.init', t => {
-  t.is(type(B.init), 'Function')
+  t.is(kind(B.init), 'Function')
+})
+
+test('should export B.kind', t => {
+  t.is(kind(B.kind), 'Function')
 })
 
 test('should export B.last', t => {
-  t.is(type(B.last), 'Function')
+  t.is(kind(B.last), 'Function')
 })
 
 test('should export B.lt', t => {
-  t.is(type(B.lt), 'Function')
+  t.is(kind(B.lt), 'Function')
 })
 
 test('should export B.lte', t => {
-  t.is(type(B.lte), 'Function')
+  t.is(kind(B.lte), 'Function')
 })
 
 test('should export B.map', t => {
-  t.is(type(B.map), 'Function')
+  t.is(kind(B.map), 'Function')
 })
 
 test('should export B.min', t => {
-  t.is(type(B.min), 'Function')
+  t.is(kind(B.min), 'Function')
 })
 
 test('should export B.multiply', t => {
-  t.is(type(B.multiply), 'Function')
+  t.is(kind(B.multiply), 'Function')
 })
 
 test('should export B.none', t => {
-  t.is(type(B.none), 'Function')
+  t.is(kind(B.none), 'Function')
 })
 
 test('should export B.or', t => {
-  t.is(type(B.or), 'Function')
+  t.is(kind(B.or), 'Function')
 })
 
 test('should export B.pipe', t => {
-  t.is(type(B.pipe), 'Function')
+  t.is(kind(B.pipe), 'Function')
 })
 
 test('should export B.prepend', t => {
-  t.is(type(B.prepend), 'Function')
+  t.is(kind(B.prepend), 'Function')
 })
 
 test('should export B.range', t => {
-  t.is(type(B.range), 'Function')
+  t.is(kind(B.range), 'Function')
 })
 
 test('should export B.reject', t => {
-  t.is(type(B.reject), 'Function')
+  t.is(kind(B.reject), 'Function')
 })
 
 test('should export B.reduce', t => {
-  t.is(type(B.reduce), 'Function')
+  t.is(kind(B.reduce), 'Function')
 })
 
 test('should export B.slice', t => {
-  t.is(type(B.slice), 'Function')
+  t.is(kind(B.slice), 'Function')
 })
 
 test('should export B.subtract', t => {
-  t.is(type(B.subtract), 'Function')
+  t.is(kind(B.subtract), 'Function')
 })
 
 test('should export B.tail', t => {
-  t.is(type(B.tail), 'Function')
+  t.is(kind(B.tail), 'Function')
 })
 
 test('should export B.take', t => {
-  t.is(type(B.take), 'Function')
+  t.is(kind(B.take), 'Function')
 })
 
 test('should export B.trim', t => {
-  t.is(type(B.trim), 'Function')
-})
-
-test('should export B.type', t => {
-  t.is(type(B.type), 'Function')
+  t.is(kind(B.trim), 'Function')
 })

@@ -1,4 +1,4 @@
-import type from './type'
+import kind from './kind'
 
 const trim = a => {
   const m = {
@@ -6,7 +6,7 @@ const trim = a => {
     '*': () => a
   }
 
-  return (m[type(a)] || m['*'])()
+  return (m[kind(a)] || m['*'])()
 }
 
 export default trim

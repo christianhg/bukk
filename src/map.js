@@ -1,5 +1,5 @@
 import curry from './curry'
-import type from './type'
+import kind from './kind'
 
 const map = (f, a) => {
   const m = {
@@ -12,9 +12,9 @@ const map = (f, a) => {
     '*': () => f(a)
   }
 
-  return type(a.map) === 'Function'
+  return kind(a.map) === 'Function'
     ? a.map(f)
-    : (m[type(a)] || m['*'])()
+    : (m[kind(a)] || m['*'])()
 }
 
 export default curry(map)

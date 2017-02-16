@@ -1,4 +1,4 @@
-import type from './type'
+import kind from './kind'
 
 const last = a => {
   const m = {
@@ -9,7 +9,7 @@ const last = a => {
     '*': () => undefined
   }
 
-  return (m[type(a)] || m['*'])()
+  return (m[kind(a)] || m['*'])()
 }
 
 export default last

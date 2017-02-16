@@ -1,8 +1,8 @@
-import type from './type'
+import kind from './kind'
 
 const flatten = a =>
   a.reduce((b, x) =>
-    type(x) === 'Array'
+    kind(x) === 'Array'
       ? [...b, ...flatten(x)]
       : [...b, x], [])
 

@@ -1,16 +1,16 @@
 import test from 'ava'
 
 import add from '../src/add'
-import type from '../src/type'
+import kind from '../src/kind'
 
 test('should be defined', t => {
-  t.is(type(add), 'Function')
+  t.is(kind(add), 'Function')
 })
 
 test('should be curried', t => {
   const addFive = add(5)
 
-  t.is(type(add(1)), 'Function')
+  t.is(kind(add(1)), 'Function')
   t.is(addFive(1), 6)
   t.is(addFive(-5), 0)
 })

@@ -1,5 +1,5 @@
 import curry from './curry'
-import type from './type'
+import kind from './kind'
 
 const equals = (a, b) => {
   const m = {
@@ -12,7 +12,7 @@ const equals = (a, b) => {
     'Set': () => a.size === b.size && equals([...a], [...b]),
     '*': () => a === b
   }
-  return (m[type(a)] || m['*'])()
+  return (m[kind(a)] || m['*'])()
 }
 
 export default curry(equals)

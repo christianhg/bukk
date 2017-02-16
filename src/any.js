@@ -1,5 +1,5 @@
 import curry from './curry'
-import type from './type'
+import kind from './kind'
 
 const any = (p, a) => {
   const m = {
@@ -12,7 +12,7 @@ const any = (p, a) => {
     'String': () => any(p, [...a]),
     '*': () => false
   }
-  return (m[type(a)] || m['*'])()
+  return (m[kind(a)] || m['*'])()
 }
 
 export default curry(any)

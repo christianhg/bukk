@@ -1,13 +1,13 @@
 import test from 'ava'
 
+import kind from '../src/kind'
 import multiply from '../src/multiply'
-import type from '../src/type'
 
 test('should be curried', t => {
   const double = multiply(2)
   const triple = multiply(3)
 
-  t.is(type(double), 'Function')
+  t.is(kind(double), 'Function')
   t.is(double(2), 4)
   t.is(triple(2), 6)
 })

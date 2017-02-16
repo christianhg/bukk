@@ -1,14 +1,14 @@
 import test from 'ava'
 
 import add from '../src/add'
+import kind from '../src/kind'
 import map from '../src/map'
-import type from '../src/type'
 
 const inc = add(1)
 const addBar = s => `${s}bar`
 
 test('should be curried', t => {
-  t.is(type(map(inc)), 'Function')
+  t.is(kind(map(inc)), 'Function')
 })
 
 test('should map an Array', t => {

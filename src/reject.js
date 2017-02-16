@@ -1,5 +1,5 @@
 import curry from './curry'
-import type from './type'
+import kind from './kind'
 
 const reject = (p, a) => {
   const m = {
@@ -16,7 +16,7 @@ const reject = (p, a) => {
     '*': () => a
   }
 
-  return (m[type(a)] || m['*'])()
+  return (m[kind(a)] || m['*'])()
 }
 
 export default curry(reject)
