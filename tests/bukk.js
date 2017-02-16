@@ -91,6 +91,10 @@ test('should export B.map', t => {
   t.is(type(B.map), 'Function')
 })
 
+test('should export B.min', t => {
+  t.is(type(B.min), 'Function')
+})
+
 test('should export B.multiply', t => {
   t.is(type(B.multiply), 'Function')
 })

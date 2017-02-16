@@ -20,6 +20,7 @@ import last from './last'
 import lt from './lt'
 import lte from './lte'
 import map from './map'
+import min from './min'
 import multiply from './multiply'
 import none from './none'
 import or from './or'
@@ -58,6 +59,7 @@ const B = {
   lt,
   lte,
   map,
+  min,
   multiply,
   none,
   or,
