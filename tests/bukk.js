@@ -95,6 +95,10 @@ test('should export B.map', t => {
   t.is(kind(B.map), 'Function')
 })
 
+test('should export B.max', t => {
+  t.is(kind(B.max), 'Function')
+})
+
 test('should export B.min', t => {
   t.is(kind(B.min), 'Function')
 })

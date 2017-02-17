@@ -21,6 +21,7 @@ import last from './last'
 import lt from './lt'
 import lte from './lte'
 import map from './map'
+import max from './max'
 import min from './min'
 import multiply from './multiply'
 import none from './none'
@@ -60,6 +61,7 @@ const B = {
   lt,
   lte,
   map,
+  max,
   min,
   multiply,
   none,
