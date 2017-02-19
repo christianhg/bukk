@@ -123,6 +123,10 @@ test('should export B.prepend', t => {
   t.is(kind(B.prepend), 'Function')
 })
 
+test('should export B.prop', t => {
+  t.is(kind(B.prop), 'Function')
+})
+
 test('should export B.range', t => {
   t.is(kind(B.range), 'Function')
 })

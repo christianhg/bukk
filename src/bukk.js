@@ -28,6 +28,7 @@ import none from './none'
 import or from './or'
 import pipe from './pipe'
 import prepend from './prepend'
+import prop from './prop'
 import range from './range'
 import reject from './reject'
 import reduce from './reduce'
@@ -68,6 +69,7 @@ const B = {
   or,
   pipe,
   prepend,
+  prop,
   range,
   reject,
   reduce,
