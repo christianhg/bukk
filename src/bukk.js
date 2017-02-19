@@ -37,6 +37,7 @@ import subtract from './subtract'
 import tail from './tail'
 import take from './take'
 import trim from './trim'
+import zip from './zip'
 
 const B = {
   add,
@@ -77,7 +78,8 @@ const B = {
   subtract,
   tail,
   take,
-  trim
+  trim,
+  zip
 }
 
 export default B

@@ -158,3 +158,7 @@ test('should export B.take', t => {
 test('should export B.trim', t => {
   t.is(kind(B.trim), 'Function')
 })
+
+test('should export B.zip', t => {
+  t.is(kind(B.zip), 'Function')
+})
