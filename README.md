@@ -131,6 +131,14 @@ Install dependencies:
 yarn install
 ```
 
+Build:
+
+```bash
+yarn run build
+```
+
+Will lint the source code, run tests and generate code coverage, and build a minified version of the library.
+
 ### Running tests
 
 Test once:
