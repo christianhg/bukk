@@ -31,8 +31,8 @@ test('should test predicate on Map', t => {
   t.is(any(isFoo, new Map([[1, 'bar'], [2, 'bar'], [3, 'bar']])), false)
 })
 
-test('should test predicate on Number', t => {
-  t.is(any(isZero, 0), true)
+test('should not operate on Numbers', t => {
+  t.is(any(isZero, 0), false)
   t.is(any(isZero, 1), false)
 })
 
