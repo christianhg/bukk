@@ -28,8 +28,8 @@ test('should test predicate on Map', t => {
   t.is(all(isFoo, new Map([[1, 'bar'], [2, 'bar'], [3, 'bar']])), false)
 })
 
-test('should test predicate on Number', t => {
-  t.is(all(isZero, 0), true)
+test('should not operate on a Number', t => {
+  t.is(all(isZero, 0), false)
   t.is(all(isZero, 1), false)
 })
 
