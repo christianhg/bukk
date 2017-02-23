@@ -7,8 +7,8 @@ const all = (p, a) => {
     'Boolean': () => p(a),
     'Map': () => [...a].every(([key, value]) => p(value)),
     'Object': () => Object.keys(a).every((x) => p(a[x])),
-    'Set': () => all(p, [...a]),
-    'String': () => all(p, [...a]),
+    'Set': () => [...a].every(p),
+    'String': () => [...a].every(p),
     '*': () => false
   }
   return (m[kind(a)] || m['*'])()
