@@ -23,6 +23,10 @@ test('should export B.append', t => {
   t.is(kind(B.append), 'Function')
 })
 
+test('should export B.both', t => {
+  t.is(kind(B.both), 'Function')
+})
+
 test('should export B.compose', t => {
   t.is(kind(B.compose), 'Function')
 })

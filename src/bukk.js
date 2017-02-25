@@ -3,6 +3,7 @@ import all from './all'
 import and from './and'
 import any from './any'
 import append from './append'
+import both from './both'
 import compose from './compose'
 import curry from './curry'
 import dec from './dec'
@@ -47,6 +48,7 @@ const B = {
   and,
   any,
   append,
+  both,
   compose,
   curry,
   dec,
