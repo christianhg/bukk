@@ -7,6 +7,7 @@ import compose from './compose'
 import curry from './curry'
 import dec from './dec'
 import divide from './divide'
+import either from './either'
 import equals from './equals'
 import filter from './filter'
 import find from './find'
@@ -50,6 +51,7 @@ const B = {
   curry,
   dec,
   divide,
+  either,
   equals,
   filter,
   find,

@@ -39,6 +39,10 @@ test('should export B.divide', t => {
   t.is(kind(B.divide), 'Function')
 })
 
+test('should export B.either', t => {
+  t.is(kind(B.either), 'Function')
+})
+
 test('should export B.equals', t => {
   t.is(kind(B.equals), 'Function')
 })
