@@ -16,8 +16,8 @@ test('should test predicate on Array', t => {
   t.is(all(isZero, [1, 0, 1]), false)
 })
 
-test('should test predicate on Boolean', t => {
-  t.is(all(isTrue, true), true)
+test('should not operate on a Boolean', t => {
+  t.is(all(isTrue, true), false)
   t.is(all(isTrue, false), false)
 })
 

@@ -4,7 +4,6 @@ import kind from './kind'
 const all = (p, a) => {
   const m = {
     'Array': () => a.every(p),
-    'Boolean': () => p(a),
     'Map': () => [...a].every(([key, value]) => p(value)),
     'Object': () => Object.keys(a).every((x) => p(a[x])),
     'Set': () => [...a].every(p),
