@@ -13,3 +13,7 @@ test('should compose functions from right to left', t => {
   t.is(compose(double, inc, addFive)(2), 16)
   t.is(compose(inc, double, addFive)(10), 31)
 })
+
+test('should accept the last function to be of any arity', t => {
+  t.is(compose(inc, multiply)(2, 3), 7)
+})
