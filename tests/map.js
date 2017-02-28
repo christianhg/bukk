@@ -38,7 +38,10 @@ test('should map a String', t => {
 })
 
 test('should map a Boolean', t => {
-  t.deepEqual(map(inc, true), 2)
+  const reverse = (bool) => !bool
+
+  t.is(map(reverse, true), false)
+  t.is(map(reverse, false), true)
 })
 
 test('should map a Map', t => {

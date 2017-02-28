@@ -15,12 +15,16 @@ test('should be curried', t => {
   t.is(addFive(-5), 0)
 })
 
-test('should add two numbers', t => {
+test('should operate on Numbers', t => {
   t.is(add(1, 1), 2)
   t.is(add(1, -1), 0)
   t.is(add(1)(-1), 0)
 })
 
-test('should add two strings', t => {
-  t.is(add('foo', 'bar'), 'foobar')
+test('should not operate on Strings', t => {
+  t.true(Number.isNaN(add('foo', 'bar')))
+})
+
+test('should not operate on mixed kinds', t => {
+  t.true(Number.isNaN(add('foo', 1)))
 })

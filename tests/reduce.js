@@ -12,9 +12,11 @@ test('should operate on an Array', t => {
 })
 
 test('should operate on a Map', t => {
+  const concat = (a, b) => `${a}${b}`
+
   t.is(reduce(add, 0, new Map([['x', 1], ['y', 2], ['z', 3]])), 6)
   t.is(
-    reduce(add, '', new Map([['x', 'foo'], ['y', 'bar'], ['z', 'baz']])),
+    reduce(concat, '', new Map([['x', 'foo'], ['y', 'bar'], ['z', 'baz']])),
     'foobarbaz'
   )
 })
