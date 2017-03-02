@@ -20,6 +20,7 @@
     "email": "christianhg@gmail.com"
   },
   "scripts": {
+    "prepublish": "npm run build",
     "prebuild": "rm -rf dist",
     "build": "npm run lint & nyc ava && webpack",
     "lint": "standard --verbose | snazzy",
