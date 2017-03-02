@@ -1,8 +1,15 @@
 import curry from './curry'
+import kind from './kind'
 
-const min = (a, b) =>
-  b > a
-    ? b
-    : a
+const max = (a, b) => {
+  const m = {
+    'Number': () => b > a
+      ? b
+      : a,
+    '*': () => undefined
+  }
 
-export default curry(min)
+  return ((kind(a) === kind(b) && m[kind(a)]) || m['*'])()
+}
+
+export default curry(max)
