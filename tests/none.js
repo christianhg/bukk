@@ -18,9 +18,9 @@ test('should test predicate on Array', t => {
   t.is(none(isZero, [1, 1, 1]), true)
 })
 
-test('should test predicate on Boolean', t => {
-  t.is(none(isTrue, true), false)
-  t.is(none(isTrue, false), true)
+test('should not operate on a Boolean', t => {
+  t.is(none(isTrue, true), undefined)
+  t.is(none(isTrue, false), undefined)
 })
 
 test('should test predicate on Map', t => {
@@ -30,9 +30,9 @@ test('should test predicate on Map', t => {
   t.is(none(isFoo, new Map([[1, 'bar'], [2, 'bar'], [3, 'bar']])), true)
 })
 
-test('should test predicate on Number', t => {
-  t.is(none(isZero, 1), true)
-  t.is(none(isZero, 0), false)
+test('should not operate on a Number', t => {
+  t.is(none(isZero, 1), undefined)
+  t.is(none(isZero, 0), undefined)
 })
 
 test('should test predicate on Object', t => {
@@ -57,5 +57,5 @@ test('should test predicate on String', t => {
 })
 
 test('should not operate on a Symbol', t => {
-  t.is(none(isA, Symbol('a')), false)
+  t.is(none(isA, Symbol('a')), undefined)
 })

@@ -4,14 +4,13 @@ import kind from './kind'
 const none = (p, a) => {
   const m = {
     'Array': () => !a.some(p),
-    'Boolean': () => !p(a),
     'Map': () => ![...a].some(([key, value]) => p(value)),
-    'Number': () => !p(a),
     'Object': () => !Object.keys(a).some((x) => p(a[x])),
     'Set': () => none(p, [...a]),
     'String': () => none(p, [...a]),
-    '*': () => false
+    '*': () => undefined
   }
+
   return (m[kind(a)] || m['*'])()
 }
 
