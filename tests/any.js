@@ -20,8 +20,8 @@ test('should test predicate on Array', t => {
 })
 
 test('should not operate on a Boolean', t => {
-  t.is(any(isTrue, true), false)
-  t.is(any(isTrue, false), false)
+  t.is(any(isTrue, true), undefined)
+  t.is(any(isTrue, false), undefined)
 })
 
 test('should test predicate on Map', t => {
@@ -32,8 +32,8 @@ test('should test predicate on Map', t => {
 })
 
 test('should not operate on Numbers', t => {
-  t.is(any(isZero, 0), false)
-  t.is(any(isZero, 1), false)
+  t.is(any(isZero, 0), undefined)
+  t.is(any(isZero, 1), undefined)
 })
 
 test('should test predicate on Object', t => {
@@ -58,5 +58,5 @@ test('should test predicate on String', t => {
 })
 
 test('should not operate on a Symbol', t => {
-  t.is(any(isA, Symbol('a')), false)
+  t.is(any(isA, Symbol('a')), undefined)
 })

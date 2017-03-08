@@ -8,8 +8,9 @@ const any = (p, a) => {
     'Object': () => Object.keys(a).some((x) => p(a[x])),
     'Set': () => [...a].some(p),
     'String': () => [...a].some(p),
-    '*': () => false
+    '*': () => undefined
   }
+
   return (m[kind(a)] || m['*'])()
 }
 
