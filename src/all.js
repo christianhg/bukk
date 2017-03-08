@@ -8,8 +8,9 @@ const all = (p, a) => {
     'Object': () => Object.keys(a).every((x) => p(a[x])),
     'Set': () => [...a].every(p),
     'String': () => [...a].every(p),
-    '*': () => false
+    '*': () => undefined
   }
+
   return (m[kind(a)] || m['*'])()
 }
 
