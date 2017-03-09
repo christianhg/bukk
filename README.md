@@ -6,6 +6,7 @@
 [![npm module](https://badge.fury.io/js/bukk.svg)](https://www.npmjs.org/package/bukk)
 [![Build Status](https://travis-ci.org/christianhg/bukk.svg?branch=master)](https://travis-ci.org/christianhg/bukk)
 [![Coverage Status](https://coveralls.io/repos/github/christianhg/bukk/badge.svg?branch=master)](https://coveralls.io/github/christianhg/bukk?branch=master)
+[![devDependencies Status](https://david-dm.org/christianhg/bukk/dev-status.svg)](https://david-dm.org/christianhg/bukk?type=dev)
 
 ## Why?
 
