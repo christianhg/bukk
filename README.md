@@ -157,3 +157,261 @@ yarn run watch:test
 ## "Bukk"?
 
 "Bukk" means "ram" in Norwegian :)
+
+## API
+
+### `B.add`
+
+`Number --> Number --> Number`
+
+---
+
+### `B.all`
+
+`(* --> Boolean) --> Array | Map | Object | Set | String --> Boolean`
+
+---
+
+### `B.and`
+
+`a --> b --> a | b`
+
+---
+
+### `B.any`
+
+`(* --> Boolean) --> Array | Map | Object | Set | String --> Boolean`
+
+---
+
+### `B.append`
+
+`* --> Array | Map | Set | String --> Array | Map | Set | String`
+
+---
+
+### `B.both`
+
+`(*... --> b) --> (*... --> d) --> b | d`
+
+---
+
+### `B.compose`
+
+`Function... --> Function`
+
+---
+
+### `B.curry`
+
+`Function --> Function`
+
+---
+
+### `B.dec`
+
+`Number --> Number`
+
+---
+
+### `B.divide`
+
+`Number --> Number --> Number`
+
+---
+
+### `B.either`
+
+`(*... --> b) --> (*... --> d) --> b | d`
+
+---
+
+### `B.equals`
+
+`* --> * --> Boolean`
+
+---
+
+### `B.filter`
+
+`Array | Map | Object | Set | String --> (* --> Boolean) --> Array | Map | Object | Set | String`
+
+---
+
+### `B.find`
+
+`(* --> Boolean) --> Array | Map | Object | Set | String --> *`
+
+---
+
+### `B.flatten`
+
+`Array --> Array`
+
+---
+
+### `B.gt`
+
+`Number --> Number --> Boolean`
+
+---
+
+### `B.gte`
+
+`Number --> Number --> Boolean`
+
+---
+
+### `B.head`
+
+`Array | Map | Set | String --> *`
+
+---
+
+### `B.inc`
+
+`Number --> Number`
+
+---
+
+### `B.init`
+
+`Array | Map | Set | String --> Array | Map | Set | String`
+
+---
+
+### `B.kind`
+
+`* --> String`
+
+---
+
+### `B.last`
+
+`Array | Map | Set | String --> *`
+
+---
+
+### `B.lt`
+
+`Number --> Number --> Boolean`
+
+---
+
+### `B.lte`
+
+`Number --> Number --> Boolean`
+
+---
+
+### `B.map`
+
+`Function --> * --> *`
+
+---
+
+### `B.max`
+
+`Number --> Number --> Number`
+
+---
+
+### `B.min`
+
+`Number --> Number --> Number`
+
+---
+
+### `B.multiply`
+
+`Number --> Number --> Number`
+
+---
+
+### `B.none`
+
+`(* --> Boolean) --> Array | Map | Object | Set | String --> Boolean`
+
+---
+
+### `B.or`
+
+`a --> b --> a | b`
+
+---
+
+### `B.pipe`
+
+`Function... --> Function`
+
+---
+
+### `B.prepend`
+
+`* --> Array | Map | Set | String --> Array | Map | Set | String`
+
+---
+
+### `B.prop`
+
+`String --> Object --> *`
+
+---
+
+### `B.range`
+
+`Number --> Number --> Array`
+
+---
+
+### `B.reduce`
+
+`(a --> b --> a) --> a --> Array | Map | Object | Set | String --> a`
+
+---
+
+### `B.reject`
+
+`(* --> Boolean) --> Array | Map | Object | Set | String --> Array | Map | Object | Set | String`
+
+---
+
+### `B.slice`
+
+`Number --> Number --> Array | Map | Set | String --> Array | Map | Set | String`
+
+---
+
+### `B.subtract`
+
+`Number --> Number --> Number`
+
+---
+
+### `B.tail`
+
+Array | Map | Set | String --> Array | Map | Set | String`
+
+---
+
+### `B.take`
+
+`Number --> Array | Map | Set | String --> Array | Map | Set | String`
+
+---
+
+### `B.trim`
+
+`String --> String`
+
+---
+
+### `B.type`
+
+`* --> String`
+
+---
+
+### `B.zip`
+
+`Array --> Array --> Array`
