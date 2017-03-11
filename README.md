@@ -8,6 +8,15 @@
 [![Coverage Status](https://coveralls.io/repos/github/christianhg/bukk/badge.svg?branch=master)](https://coveralls.io/github/christianhg/bukk?branch=master)
 [![devDependencies Status](https://david-dm.org/christianhg/bukk/dev-status.svg)](https://david-dm.org/christianhg/bukk?type=dev)
 
+- [Why?](#why)
+- [Goals and philosophies](#goals-and-philosophies)
+- [Examples](#examples)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Development](#development)
+- ["Bukk"?](#bukk)
+- [API](#api)
+
 ## Why?
 
 Not exactly. Well, not only for Norwegians. Inspired by [Ramda](https://github.com/ramda/ramda), this an automatically curried, data-last, functional JavaScript library.
