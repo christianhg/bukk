@@ -211,6 +211,12 @@ yarn run watch:test
 
 ---
 
+### `B.concat`
+
+`Array | Map | Set | String --> Array | Map | Set | String --> Array | Map | Set | String`
+
+---
+
 ### `B.curry`
 
 `Function --> Function`

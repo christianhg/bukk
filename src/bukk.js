@@ -5,6 +5,7 @@ import any from './any'
 import append from './append'
 import both from './both'
 import compose from './compose'
+import concat from './concat'
 import curry from './curry'
 import dec from './dec'
 import divide from './divide'
@@ -50,6 +51,7 @@ const B = {
   append,
   both,
   compose,
+  concat,
   curry,
   dec,
   divide,

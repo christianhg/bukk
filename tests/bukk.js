@@ -31,6 +31,10 @@ test('should export B.compose', t => {
   t.is(kind(B.compose), 'Function')
 })
 
+test('should export B.concat', t => {
+  t.is(kind(B.concat), 'Function')
+})
+
 test('should export B.curry', t => {
   t.is(kind(B.curry), 'Function')
 })
