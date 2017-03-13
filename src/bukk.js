@@ -25,6 +25,7 @@ import lt from './lt'
 import lte from './lte'
 import map from './map'
 import max from './max'
+import merge from './merge'
 import min from './min'
 import multiply from './multiply'
 import none from './none'
@@ -71,6 +72,7 @@ const B = {
   lte,
   map,
   max,
+  merge,
   min,
   multiply,
   none,

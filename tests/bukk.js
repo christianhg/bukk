@@ -111,6 +111,10 @@ test('should export B.max', t => {
   t.is(kind(B.max), 'Function')
 })
 
+test('should export B.merge', t => {
+  t.is(kind(B.merge), 'Function')
+})
+
 test('should export B.min', t => {
   t.is(kind(B.min), 'Function')
 })

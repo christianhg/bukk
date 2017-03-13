@@ -331,6 +331,12 @@ yarn run watch:test
 
 ---
 
+### `B.merge`
+
+`Object --> Object --> Object`
+
+---
+
 ### `B.min`
 
 `Number --> Number --> Number`
