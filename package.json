@@ -22,7 +22,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "prebuild": "rm -rf dist",
-    "build": "npm run lint & nyc ava && webpack",
+    "build": "npm run lint & nyc ava && webpack -p",
     "lint": "standard --verbose | snazzy",
     "test": "npm run lint & nyc ava",
     "watch:test": "npm run lint & ava --watch"

@@ -1,5 +1,4 @@
 import path from 'path'
-import webpack from 'webpack'
 
 export default {
   entry: './src/bukk.js',
@@ -26,8 +25,5 @@ export default {
         }
       }
     ]
-  },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin()
-  ]
+  }
 }
