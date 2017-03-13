@@ -40,7 +40,7 @@
   },
   "babel": {
     "presets": [
-      "@ava/stage-4"
+      "es2015"
     ]
   },
   "standard": {
@@ -49,7 +49,6 @@
     ]
   },
   "devDependencies": {
-    "@ava/babel-preset-stage-4": "^1.0.0",
     "ava": "^0.18.2",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.0",
