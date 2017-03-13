@@ -3,7 +3,7 @@ import kind from './kind'
 
 const merge = (a, b) => {
   const m = {
-    'Object': () => Object.assign({}, a, b),
+    'Object': () => ({...a, ...b}),
     '*': () => undefined
   }
 
