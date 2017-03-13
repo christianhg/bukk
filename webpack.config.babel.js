@@ -14,15 +14,7 @@ export default {
       {
         exclude: /node_modules/,
         test: /\.js$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            plugins: [
-              'babel-plugin-add-module-exports'
-            ],
-            presets: ['es2015']
-          }
-        }
+        use: 'babel-loader'
       }
     ]
   }
