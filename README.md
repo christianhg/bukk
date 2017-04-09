@@ -411,7 +411,7 @@ yarn run watch:test
 
 ### `B.tail`
 
-Array | Map | Set | String --> Array | Map | Set | String`
+`Array | Map | Set | String --> Array | Map | Set | String`
 
 ---
 
