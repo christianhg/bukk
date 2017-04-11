@@ -58,7 +58,7 @@
     "babel-loader": "^6.4.1",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-es2015": "^6.24.1",
     "coveralls": "^2.13.0",
     "nyc": "^10.2.0",
     "snazzy": "^7.0.0",
