@@ -163,6 +163,10 @@ test('should export B.slice', t => {
   t.is(kind(B.slice), 'Function')
 })
 
+test('should export B.sortBy', t => {
+  t.is(kind(B.sortBy), 'Function')
+})
+
 test('should export B.subtract', t => {
   t.is(kind(B.subtract), 'Function')
 })

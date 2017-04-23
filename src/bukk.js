@@ -38,6 +38,7 @@ import reduce from './reduce'
 import reject from './reject'
 import reverse from './reverse'
 import slice from './slice'
+import sortBy from './sortBy'
 import subtract from './subtract'
 import tail from './tail'
 import take from './take'
@@ -86,6 +87,7 @@ const B = {
   reject,
   reverse,
   slice,
+  sortBy,
   subtract,
   tail,
   take,

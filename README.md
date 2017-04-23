@@ -409,6 +409,12 @@ yarn run watch:test
 
 ---
 
+### `B.sortBy`
+
+`Function --> Array | Map | Set --> Array | Map | Set`
+
+---
+
 ### `B.subtract`
 
 `Number --> Number --> Number`
