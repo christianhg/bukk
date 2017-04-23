@@ -147,12 +147,16 @@ test('should export B.range', t => {
   t.is(kind(B.range), 'Function')
 })
 
+test('should export B.reduce', t => {
+  t.is(kind(B.reduce), 'Function')
+})
+
 test('should export B.reject', t => {
   t.is(kind(B.reject), 'Function')
 })
 
-test('should export B.reduce', t => {
-  t.is(kind(B.reduce), 'Function')
+test('should export B.reverse', t => {
+  t.is(kind(B.reverse), 'Function')
 })
 
 test('should export B.slice', t => {

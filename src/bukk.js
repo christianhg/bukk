@@ -34,8 +34,9 @@ import pipe from './pipe'
 import prepend from './prepend'
 import prop from './prop'
 import range from './range'
-import reject from './reject'
 import reduce from './reduce'
+import reject from './reject'
+import reverse from './reverse'
 import slice from './slice'
 import subtract from './subtract'
 import tail from './tail'
@@ -81,8 +82,9 @@ const B = {
   prepend,
   prop,
   range,
-  reject,
   reduce,
+  reject,
+  reverse,
   slice,
   subtract,
   tail,

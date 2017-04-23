@@ -397,6 +397,12 @@ yarn run watch:test
 
 ---
 
+### `B.reverse`
+
+`Array | Map | Set | String --> Array | Map | Set | String`
+
+---
+
 ### `B.slice`
 
 `Number --> Number --> Array | Map | Set | String --> Array | Map | Set | String`
