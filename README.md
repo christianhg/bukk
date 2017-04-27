@@ -131,7 +131,7 @@ import * as B from 'bukk'
 import { compose, map, prop } from 'bukk'
 ```
 
-Or add the `B` variable to global scope:
+Or add the `B` variable to the global scope:
 
 ```html
 <script src="nodule_modules/bukk/dist/bukk.js"></script>
