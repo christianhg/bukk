@@ -124,7 +124,11 @@ npm install --save bukk
 Import module:
 
 ```js
-const B = require('bukk')
+import * as B from 'bukk'
+```
+
+```js
+import { compose, map, prop } from 'bukk'
 ```
 
 Or add the `B` variable to global scope:
