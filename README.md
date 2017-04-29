@@ -253,7 +253,7 @@ yarn run watch:test
 
 ### `B.filter`
 
-`Array | Map | Object | Set | String --> (* --> Boolean) --> Array | Map | Object | Set | String`
+`(* --> Boolean) --> Array | Map | Object | Set | String --> Array | Map | Object | Set | String`
 
 ---
 
