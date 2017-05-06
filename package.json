@@ -21,8 +21,9 @@
   },
   "scripts": {
     "prepublish": "npm run build",
-    "prebuild": "rm -rf dist",
-    "build": "npm run lint & nyc ava && webpack -p",
+    "preprebuild": "rm -rf dist",
+    "prebuild": "npm run test",
+    "build": "webpack -p",
     "lint": "standard --verbose | snazzy",
     "pretest": "npm run lint",
     "test": "nyc ava",
