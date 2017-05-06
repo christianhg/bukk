@@ -24,7 +24,8 @@
     "prebuild": "rm -rf dist",
     "build": "npm run lint & nyc ava && webpack -p",
     "lint": "standard --verbose | snazzy",
-    "test": "npm run lint & nyc ava",
+    "pretest": "npm run lint",
+    "test": "nyc ava",
     "watch:test": "npm run lint & ava --watch"
   },
   "ava": {
