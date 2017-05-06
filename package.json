@@ -26,7 +26,8 @@
     "lint": "standard --verbose | snazzy",
     "pretest": "npm run lint",
     "test": "nyc ava",
-    "dev": "npm run lint & ava --watch"
+    "predev": "npm run lint",
+    "dev": "ava --watch"
   },
   "ava": {
     "files": "tests/*.js",
