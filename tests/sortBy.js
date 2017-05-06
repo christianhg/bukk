@@ -7,7 +7,7 @@ const second = xs => xs[1]
 const identity = x => x
 
 test('should operate on Arrays', t => {
-  t.deepEqual(sortBy(length, ['a', 'aaa', 'aa']), ['a', 'aa', 'aaa'])
+  t.deepEqual(sortBy(length, ['a', 'aaa', 'aa', 'a']), ['a', 'a', 'aa', 'aaa'])
   t.deepEqual(sortBy(length, ['', 'aaa', 'a']), ['', 'a', 'aaa'])
 })
 
