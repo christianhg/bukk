@@ -164,7 +164,7 @@ yarn run test
 Test in watch mode:
 
 ```bash
-yarn run watch:test
+yarn run dev
 ```
 
 ## "Bukk"?
