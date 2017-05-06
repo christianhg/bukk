@@ -167,6 +167,12 @@ Test in watch mode:
 yarn run dev
 ```
 
+Reading coverage reports:
+
+```bash
+yarn run report
+```
+
 ## "Bukk"?
 
 "Bukk" means "ram" in Norwegian :)

@@ -26,7 +26,8 @@
     "build": "webpack -p",
     "lint": "standard --verbose | snazzy",
     "pretest": "npm run lint",
-    "test": "nyc ava",
+    "test": "cross-env NODE_ENV=test nyc ava",
+    "report": "nyc report --reporter=lcov && open ./coverage/lcov-report/index.html",
     "predev": "npm run lint",
     "dev": "ava --watch"
   },
@@ -39,9 +40,21 @@
   "nyc": {
     "include": [
       "src/*.js"
-    ]
+    ],
+    "instrument": false,
+    "require": [
+      "babel-register"
+    ],
+    "sourceMap": false
   },
   "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "istanbul"
+        ]
+      }
+    },
     "plugins": [
       "babel-plugin-add-module-exports",
       "transform-object-rest-spread"
@@ -60,9 +73,11 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-istanbul": "^4.1.3",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "coveralls": "^2.13.1",
+    "cross-env": "^4.0.0",
     "nyc": "^10.3.2",
     "snazzy": "^7.0.0",
     "standard": "^10.0.2",
